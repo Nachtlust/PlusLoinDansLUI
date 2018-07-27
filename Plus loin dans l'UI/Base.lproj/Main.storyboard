@@ -29,7 +29,7 @@
         <!--Item 1-->
         <scene sceneID="sBq-Zi-UOa">
             <objects>
-                <viewController id="ANw-M5-n9d" sceneMemberID="viewController">
+                <viewController id="ANw-M5-n9d" customClass="CycleEtFrameController" customModule="Plus_loin_dans_l_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pk0-9d-VOF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
