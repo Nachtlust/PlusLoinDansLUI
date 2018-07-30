@@ -17,14 +17,28 @@
                     <view key="view" contentMode="scaleToFill" id="ky3-wF-g1e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIo-wX-Mjb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JIo-wX-Mjb" firstAttribute="leading" secondItem="hTt-xp-OLl" secondAttribute="leading" id="HzL-tT-nXX"/>
+                            <constraint firstItem="JIo-wX-Mjb" firstAttribute="trailing" secondItem="hTt-xp-OLl" secondAttribute="trailing" id="ZQA-cr-hKj"/>
+                            <constraint firstItem="JIo-wX-Mjb" firstAttribute="bottom" secondItem="hTt-xp-OLl" secondAttribute="bottom" id="o01-9L-a2a"/>
+                            <constraint firstItem="JIo-wX-Mjb" firstAttribute="top" secondItem="ky3-wF-g1e" secondAttribute="top" id="vKR-hk-SIV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hTt-xp-OLl"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="qOj-Eo-vrB"/>
+                    <connections>
+                        <outlet property="scroll" destination="JIo-wX-Mjb" id="I3u-EJ-Ufh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F9K-yM-3mm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="63"/>
+            <point key="canvasLocation" x="47.200000000000003" y="62.518740629685162"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="sBq-Zi-UOa">
