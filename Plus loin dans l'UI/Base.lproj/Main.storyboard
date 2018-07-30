@@ -13,7 +13,7 @@
         <!--Item 2-->
         <scene sceneID="N3m-I8-cGw">
             <objects>
-                <viewController id="cB7-Ud-BCe" sceneMemberID="viewController">
+                <viewController id="cB7-Ud-BCe" customClass="ProgController" customModule="Plus_loin_dans_l_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ky3-wF-g1e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,10 +33,27 @@
                     <view key="view" contentMode="scaleToFill" id="Pk0-9d-VOF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBy-bu-EIa">
+                                <rect key="frame" x="67" y="110" width="241" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="gXX-2n-6B4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gBy-bu-EIa" firstAttribute="top" secondItem="3FR-q5-Dbe" secondAttribute="top" constant="90" id="Ska-1m-Oya"/>
+                            <constraint firstItem="gBy-bu-EIa" firstAttribute="leading" secondItem="3FR-q5-Dbe" secondAttribute="leading" constant="67" id="UDB-et-h5M"/>
+                            <constraint firstItem="3FR-q5-Dbe" firstAttribute="trailing" secondItem="gBy-bu-EIa" secondAttribute="trailing" constant="67" id="lkl-8a-Tqi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3FR-q5-Dbe"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="ZdY-40-vxF"/>
+                    <connections>
+                        <outlet property="vueFrameEtBounds" destination="gBy-bu-EIa" id="zvo-QI-Gzw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4i-Qu-Vh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
